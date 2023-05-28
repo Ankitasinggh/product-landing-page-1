@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background: linear-gradient(90deg,#b7b78a,#3c6255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.wrapper{
+    background-color: #dddddd;
+    width: 90%;
+    height: 90vh;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color:transparent;
+    border: 5px solid #808000;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+.navbar .logo::before{
+    content: "shopify";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-50%);
+}
+.navbar{
+   
+    width: 90%;
+    margin:auto;
+    height: 15vh;
+
+}
+.navbar ,.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+list-style: none;
+padding: 20px;}
+
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position:relative;   
+}
+.navlist a::before{
+    content:"" ;
+    position: absolute;
+    bottom: -10;
+    left:0;
+    width: 0;
+    height:2px;
+    background-color: black;
+    transition :.5s ease-in-out ;
+}
+.navlist a:hover::backdrop{
+    width:100%;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    height: 395px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.img{
+    max-width: 10%;
+    max-height: 10%;
+    display: flex;
+    gap: 5px;
+}   
+.content{
+    
+    top: -200%;
+    display: flex;
+    justify-content:baseline;
+    align-items: flex-start;
+    padding :20px;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 4px solid #808000;
+    padding: 20px,50px; 
+}
+.content img{
+    width: 40vh ;  
+}
+button.cta {
+    border: none;
+    outline: none;
+    background-color: #808000;
+    color: #dddddd;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color 0.5s;  
+
+}
+button.cta:hover{
+    background-color: white;
+    color: #808000;
+}
+   
+
+
+.content h1{
+    color:#808000;
+    font-size: 40px;}
+    .content h4{
+        color: darkgoldenrod;
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+
+
+
+   
